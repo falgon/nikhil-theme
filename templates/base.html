@@ -69,6 +69,7 @@
             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
             <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/tags.html">tags</a></li>
+            <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/about.html">about</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -80,7 +81,7 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <p class="footer-text">&copy; <a href="{{SITEURL}}">{{SITENAME}}</a> powered by <a href="https://getpelican.com/">pelican</a> and <a href="https://nodotcom.org">nikhil</a></p>
+          <p class="footer-text">&copy; <a href="{{SITEURL}}">{{SITENAME}}</a> powered by <a href="https://getpelican.com/">pelican</a> and <a href="https://nodotcom.org">nikhil</a>&nbsp;(forked by <a href="https://falgon.github.io/roki/">roki</a>)</p>
       </div>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
