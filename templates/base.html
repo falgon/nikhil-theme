@@ -69,7 +69,7 @@
             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
             <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/tags.html">tags</a></li>
-            <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/about.html">about</a></li>
+            <li{% if author or tag %} class="active"{% endif %}><a href="{{ SITEURL }}/about.html">about</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
