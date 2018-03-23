@@ -91,11 +91,7 @@
     {% block content %}
     {% endblock %}
     </div>
-    <footer class="footer">
-      <div class="container">
-          <p class="footer-text">&copy; <a href="{{SITEURL}}">{{SITENAME}}</a> powered by <a href="https://getpelican.com/">pelican</a> and <a href="https://nodotcom.org">nikhil</a>&nbsp;(forked by <a href="https://falgon.github.io/roki/">roki</a>)</p>
-      </div>
-    </footer>
+    {% include 'includes/footer.html' %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     {% include 'analytics.html' %}
