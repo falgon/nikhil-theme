@@ -1,6 +1,8 @@
-This is a clean bootstrap theme for [Pelican](http://getpelican.com). It is based on [simple-bootstrap](https://github.com/getpelican/pelican-themes/tree/master/simple-bootstrap).
+# My blog theme
 
-See it live on [nikhil's blog](http://nodotcom.org).
+## Changes from source
 
-## Screenshot ##
-![screenshot](screenshot.png)
+* Fix all links to https
+* [Since Pelican 3.7.0 changed the context variable called `PAGES` to `pages`](http://docs.getpelican.com/en/stable/changelog.html#id2), it was corrected as it is not rendered properly as it is.
+* Added search feature
+* Added 404 page
