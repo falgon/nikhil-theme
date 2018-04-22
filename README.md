@@ -6,6 +6,7 @@
 * [Since Pelican 3.7.0 changed the context variable called `PAGES` to `pages`](http://docs.getpelican.com/en/stable/changelog.html#id2), it was corrected as it is not rendered properly as it is.
 * Added search feature
 * Added 404 page
+* Added [pelican-dynamic](https://github.com/wrobstory/pelican_dynamic) plugin settings
 
 ## My blog
 * [roki.log](https://falgon.github.io/roki.log/) (Mostly Japanese)
