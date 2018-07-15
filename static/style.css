@@ -118,5 +118,5 @@ body {
 .il { color: #009999 } /* Literal.Number.Integer.Long */
 
 .MathJax .mi, .MathJax .mo {
-    color: inherit;
+    color: inherit !important;
 }
