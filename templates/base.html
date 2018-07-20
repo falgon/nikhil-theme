@@ -82,7 +82,6 @@
             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
             <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/tags.html">Tags</a></li>
-            <li{% if category %} class="active"{% endif %}><a href="{{ SITEURL }}/categories.html">Categories</a></li>
             {% if 'tipue_search' in PLUGINS %}
             <li><span>
                 <form class="navbar-search" action="{{ SEARCH_URL | default('/search.html') }}">
