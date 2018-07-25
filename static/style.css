@@ -47,6 +47,7 @@ body {
 .entry-content {
   padding:15px 0;
   line-height:1.8;
+  overflow-x: scroll;
 }
 
 .comment {
@@ -119,7 +120,6 @@ body {
 
 .MathJax .mi, .MathJax .mo {
     color: inherit !important;
-    overflow-x: scroll;
 }
 
 a.disabled{
