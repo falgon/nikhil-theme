@@ -120,3 +120,12 @@ body {
 .MathJax .mi, .MathJax .mo {
     color: inherit !important;
 }
+
+a.disabled{
+    pointer-events: none;
+    color: #000;
+}
+
+.panel-body{
+    overflow: scroll;
+}
