@@ -119,6 +119,7 @@ body {
 
 .MathJax .mi, .MathJax .mo {
     color: inherit !important;
+    overflow-x: scroll;
 }
 
 a.disabled{
