@@ -1,10 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic,700italic,300,300italic&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
 
 @media (max-width: 776px) {
   .text-right {
     text-align: left;
   }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -13,7 +17,7 @@ html {
 }
 
 body {
-  font-family: 'Libre Baskerville' , Garamond , "Times New Roman" , "Sawarabi Mincho" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+  font-family: 'Libre Baskerville' , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
   font-weight: 200;
 }
 
