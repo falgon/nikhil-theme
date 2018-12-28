@@ -23,6 +23,7 @@ body {
 .win p {
   transform: rotate(.03deg);
   -webkit-transform: rotate(.03deg);
+  font-weight: 700;
 }    
 
 .summary {
