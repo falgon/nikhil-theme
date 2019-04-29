@@ -153,5 +153,5 @@ a.disabled {
 }
 
 .active a {
-    padding-bottom: 21px;
+    padding-bottom: 21px !important;
 }
