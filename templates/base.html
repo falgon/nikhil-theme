@@ -65,7 +65,7 @@
         {% endif %}
     {% endif %}
   </head>
-  <body id="index" class="archive">
+  <body id="index" class="archive" style="font-family: 'Computer Modern', sans-serif, '游明朝', 'Yu Mincho' , '游明朝体' , 'YuMincho' , 'ヒラギノ明朝 Pro W3' , 'Hiragino Mincho Pro' , 'HiraMinProN-W3', 'HGS明朝E' , 'ＭＳ Ｐ明朝' , 'MS PMincho', serif;">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -83,9 +83,17 @@
         <div class="collapse navbar-collapse navbar-right">
           <ul class="nav navbar-nav">
             {% for p in pages %}
-            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            <li{% if p == page %} class="active"{% endif %}>
+                {% if p.url == 'pages/about/' %}
+                    <a href="{{ SITEURL }}/pages/about"><i class="fas fa-info-circle" style="margin-right: 4px;"></i>About</a>
+                {% elif p.url == 'pages/about_ja/' %}
+                {% else %}
+                    <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+                {% endif %}
+            </li>
             {% endfor %}
-            <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/tags.html"><i class="fas fa-tags" style="margin-right: 3px;"></i>Tags</a></li>
+            
+            <li{% if author or tag %} class="active"{% endif %}{% block archclass %}{{ ARCHCLASS }}{% endblock archclass %}><a href="{{ SITEURL }}/tags.html"><i class="fas fa-tags" style="margin-right: 4px;"></i>Tags</a></li>
             {% if 'tipue_search' in PLUGINS %}
             <li><span>
                 <form class="navbar-search" action="{{ SEARCH_URL | default('/search.html') }}">
