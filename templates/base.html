@@ -64,6 +64,20 @@
             {% endfor %}
         {% endif %}
     {% endif %}
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+  		"HTML-CSS": {fonts: ['STIX-web']},
+  		SVG: {font: 'STIX-Web'},
+  		TeX: {Augment: {
+    		Definitions: {
+      			delimiter: {
+        			'\\llbracket': '27E6',
+        			'\\rrbracket': '27E7
+      			}
+    		}
+  		}}
+	});
+	</script>
   </head>
   <body id="index" class="archive" style="font-family: '游明朝', 'Yu Mincho' , '游明朝体' , 'YuMincho' , 'ヒラギノ明朝 Pro W3' , 'Hiragino Mincho Pro' , 'HiraMinProN-W3', 'HGS明朝E' , 'ＭＳ Ｐ明朝' , 'MS PMincho', serif;">
     <!--[if lt IE 7]>
