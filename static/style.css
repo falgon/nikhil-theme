@@ -160,3 +160,48 @@ a.disabled {
 .active a {
     padding-bottom: 21px !important;
 }
+
+/* using panel-heading for math ... */
+.def a:after {
+    content: "Def.";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
+
+.theo a:after {
+    content: "Th.";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
+
+.prop a:after {
+    content: "Prop.";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
+
+.lemma a:after {
+    content: "Lemma";
+    margin-top: -2px;
+    text-align: right;
+    float: right;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: #fff;
+}
